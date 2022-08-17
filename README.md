@@ -19,13 +19,11 @@ The minimum edit cost will again be the last entry in our matrix.
 
 Installation Instructions:
 
-0. Install Python3
 1. Download the code from this repository 
 2. Navigate to the correct directory containing the code folder using the "cd" command in terminal
-3. Once in the correct folder, run the test suite using the command: "python3 test_edit_distance.py". It should return: 
-"Ran 1 test in 0.000s
+3. Once in the correct folder, run the test suite using the command: "python3 test_edit_distance.py"
 
-OK"
+Note: this was ran on a MacOS system using VSCode and Python 3.10.6
 
 Repository Structure:
 - edit_distance.py contains the edit distance algorithm
