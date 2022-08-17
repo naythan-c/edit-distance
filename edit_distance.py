@@ -1,4 +1,12 @@
 def edit_distance(word1, word2):
+
+    # #Checking input
+    # if not type(word1) is str or not type(word2) is str: #raises an error if either word isn't a string
+    #     raise TypeError("Only strings are allowed!")
+    # if not word1.islower() or not word2.islower(): #raises an error if either word contains a capital letter
+    #     print("test")
+    #     raise ValueError("Only lowercase strings are allowed!")
+
     # Boundary Cases:
     if not word1:  # if word1 is empty, the edit_distance is simply inserting all of word2's characters
         return len(word2)
