@@ -1,8 +1,8 @@
 # edit-distance
-About:
+**About:**
 Using Python and dynamic programming, I create an algorithm to compute the edit distance between two strings.
 
-Reflection: 
+**Reflection:**
 To calculate the minimum edit cost, a similar algorithm to edit distance can be used. Instead of building a matrix to store edit distance, we can build a matrix to store the minimum cost. 
 
 Let's talk about how we would go about building our matrix. The first step is always intiliazting the top row and first column of our matrix, which allows us to then compute the remaining values of our matrix.
@@ -17,7 +17,7 @@ When we compute the minimum values between insertion, deletion, and substitution
 
 The minimum edit cost will again be the last entry in our matrix. 
 
-Installation Instructions:
+**Installation Instructions:**
 
 1. Download the code from this repository 
 2. Navigate to the correct directory containing the code folder using the "cd" command in terminal
@@ -25,16 +25,16 @@ Installation Instructions:
 
 Note: this was ran on a MacOS system using VSCode and Python 3.10.6
 
-Repository Structure:
-- edit_distance.py contains the edit distance algorithm
+**Repository Structure:**
+- edit_distance.py contains the edit distance algorithm as well as the edit distance algorithm with transpositions allowed
 - test_edit_distance.py contains unit tests for various cases (run this file)
 
-Programming Complexities:
+**Programming Complexities:**
 1. Time Complexity: O(m * n)
 2. Space Complexity: O(m * n) 
 Note: m is the length of word1 + 1 and n is the length of word2 + 1
 
-Brainstorming Document:
+**Brainstorming Document:**
 I'm linking the google document that showcases my thoughtprocess and approach to the edit distance algorithm. It also includes helpful visualizations of the algorithm matrix that I created. 
 https://docs.google.com/document/d/1xEhgZ-tAn6zTn00vXlucm1MjRlCjx1X2wlLkb9Ymnxw/edit?usp=sharing
 
