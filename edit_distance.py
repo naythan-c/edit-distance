@@ -1,28 +1,15 @@
 def edit_distance(word1, word2):
-
-    # #Checking input
-    # if not type(word1) is str or not type(word2) is str: #raises an error if either word isn't a string
-    #     raise TypeError("Only strings are allowed!")
-    # if not word1.islower() or not word2.islower(): #raises an error if either word contains a capital letter
-    #     print("test")
-    #     raise ValueError("Only lowercase strings are allowed!")
-
-    # Boundary Cases:
-    if not word1:  # if word1 is empty, the edit_distance is simply inserting all of word2's characters
-        return len(word2)
-    if not word2:  # if word2 is empty, the edit_distance is simply deleting all of word1's characters
-        return len(word1)
-
-    # Normal Cases:
-
+    #Check if there's an empty string, if there is: raise an error
+    if not word1 or not word2:
+        raise ValueError("Empty strings are not allowed!")
     # Create our matrix
     matrix = [[0] * (len(word2) + 1) for i in range(len(word1) + 1)]
 
-    # Fill the top row
+    # Fill the top row 
     for i in range(len(word2) + 1):
         matrix[0][i] = i
 
-    # Fill the first column
+    # Fill the first column 
     for j in range(len(word1) + 1):
         matrix[j][0] = j
 
@@ -37,7 +24,7 @@ def edit_distance(word1, word2):
                 matrix[index1][index2] = min(
                     matrix[index1][index2 - 1], matrix[index1 - 1][index2], matrix[index1 - 1][index2 - 1]) + 1
 
-    # # Print out the entire matrix for visualization purposes
+    # If you want to visualize the matrix, uncomment this line of code:
     # print('\n'.join(['\t'.join([str(cell) for cell in row])
     #       for row in matrix]))
 
