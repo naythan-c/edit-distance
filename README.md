@@ -18,6 +18,7 @@ When we compute the minimum values between insertion, deletion, and substitution
 The minimum edit cost will again be the last entry in our matrix. 
 
 Installation Instructions:
+
 0. Install Python3
 1. Download the code from this repository 
 2. Navigate to the correct directory containing the code folder using the "cd" command in terminal
@@ -25,6 +26,10 @@ Installation Instructions:
 "Ran 1 test in 0.000s
 
 OK"
+
+Repository Structure:
+- edit_distance.py contains the edit distance algorithm
+- test_edit_distance.py contains unit tests for various cases (run this file)
 
 Programming Complexities:
 1. Time Complexity: O(m * n)
